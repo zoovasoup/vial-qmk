@@ -2,3 +2,8 @@ LTO_ENABLE = yes
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
 
+
+OLED_ENABLE         = no
+RGBLIGHT_ENABLE     = no
+REPEAT_KEY_ENABLE = yes
+QMK_SETTINGS = no
