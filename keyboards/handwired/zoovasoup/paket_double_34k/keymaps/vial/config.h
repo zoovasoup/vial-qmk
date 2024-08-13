@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VIAL_KEYBOARD_UID {0xCE, 0x0B, 0x5E, 0xE2, 0x40, 0x60, 0x17, 0xC8}
 #define VIAL_UNLOCK_COMBO_ROWS {0, 0}
 #define VIAL_UNLOCK_COMBO_COLS {0, 1}
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6
 
 // Define options
 /*#define TAPPING_TERM 135*/
