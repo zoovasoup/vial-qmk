@@ -29,3 +29,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 #define SOFT_ SERIAL_PIN D0
 #define SELECT_SOFT_SERIAL_SPEED 1
+
+/* zoovasoup preferenced setting */
+
+#define TAPPING_TERM 190
+#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS
