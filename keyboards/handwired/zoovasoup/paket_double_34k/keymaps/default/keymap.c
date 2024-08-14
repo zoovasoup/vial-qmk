@@ -3,6 +3,14 @@
 
 #include QMK_KEYBOARD_H
 
+enum {
+    TD_JJ_ESC,
+};
+
+tap_dance_action_t tap_dance_action[] = {
+    [TD_JJ_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_J, KC_ESCAPE),
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      /*
       * ┌───┬───┬───┬───┬───┐       ┌───┬───┬───┬───┬───┐
@@ -18,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       *                   └───┘   └───┘
       */
     [0] = LAYOUT (
-        KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,
+        KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               TD(TD_JJ_ESC),    KC_L,    KC_U,    KC_Y,    KC_SCLN,
         LSFT_T(KC_A),     LCTL_T(KC_R),   LGUI_T(KC_S),    LALT_T(KC_T),    KC_G,   KC_M,    RALT_T(KC_N),    RGUI_T(KC_E),    RCTL_T(KC_I),    RSFT_T(KC_O),
         KC_X,    KC_C,    KC_D,    KC_V,    KC_Z,                               KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH,
                                            LT3(KC_BSPC), LT1(KC_TAB),           LT2(KC_SPC),  LT3(KC_ENT)
