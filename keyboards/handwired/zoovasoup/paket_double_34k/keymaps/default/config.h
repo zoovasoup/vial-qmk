@@ -31,7 +31,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SELECT_SOFT_SERIAL_SPEED 1
 
 /* zoovasoup preferenced setting */
+/* ----------------------------- */
 
+/* tap hold */
 #define TAPPING_TERM 190
 #define PERMISSIVE_HOLD
 #define HOLD_ON_OTHER_KEY_PRESS
+
+/* mouse setting */
+#define MOUSEKEY_DELAY 10
+#define MOUSEKEY_INTERVAL 20
+#define MOUSEKEY_MOVE_DELTA 18
+#define MOUSEKEY_MAX_SPEED 1
+#define MOUSEKEY_TIME_TO_MAX 20
+#define MOUSEKEY_WHEEL_DELAY 80
+#define MOUSEKEY_WHEEL_INTERVAL 20
+#define MOUSEKEY_WHEEL_DELTA 1
+#define MOUSEKEY_WHEEL_MAX_SPEED 2
+#define MOUSEKEY_WHELL_TIME_TO_MAX 50
